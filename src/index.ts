@@ -1,17 +1,4 @@
-import express from "express";
-import creditCardRoutes from "./routes/credit-card-route";
-import swaggerRoutes from "./config/swagger-route";
-import bodyParser from "body-parser";
-
-const app = express();
-
-// Configure app to use bodyParser
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-// Register the routes
-app.use("/creditcard", creditCardRoutes);
-app.use("/swagger", swaggerRoutes);
+import app from "./api";
 
 // Start and listen
 const port = process.env.PORT || 8080;

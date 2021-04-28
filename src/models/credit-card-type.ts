@@ -1,7 +1,6 @@
 export enum CreditCardType {
     Unknown = 'unknown',
-    
-    AMEX = 'amex',
+    Amex = 'amex',
     Discover = 'discover',
     MasterCard = 'mastercard',
     Visa = 'visa'
